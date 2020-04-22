@@ -1,0 +1,102 @@
+- check internet connection
+    - ping google.com
+- install packages
+    - sudo apt-get install nasm build-essential
+- SLAE-code.zip
+https://github.com/MarcoLugo/SLAE
+https://github.com/fuzboxz/SLAE
+https://github.com/hAxe1/SLAE
+http://www.x0rsecurity.com/category/slae/
+https://github.com/xMilkPowderx/SLAE-Code
+https://github.com/prateek147/SLAE/tree/master/SLAE-Code
+https://www.youtube.com/user/TheSecurityTube/videos
+http://www.securitytube.net/
+
+- lscpu
+- cat /proc/cpuinfo
+
+- General Pupose Registers (8)
+    - eax, ebx, ecx, edx
+    - ax => ah, al
+    - esp, ebp, esi, edi
+    - sp, bp, si, di (no h and l)
+    
+- eax - accumulator
+- ebx - base register - data pointer
+- ecx - counter
+- edx - data pointer(I/O)
+- esi, edi - data pointers for memory operations
+- esp - stack pointer
+- ebp - stack data pointer
+
+- Segment registers (16bits)
+    - cs - Code
+    - ds - Data
+    - ss - Stackyy
+    
+    - es - Data
+    - fs - Data
+    - gs - Data
+    - gs - Data
+
+- eip - Instruction Pointer (32 bits)
+
+- FPU - Floating Point Unit or x87 (
+    - ST0 - ST7 (80bits) like a stack
+
+- Extensions
+    - SIMD - Single Instruction Multiple Data
+    - MMX
+    - SSE
+    - SSE2
+    - SSE3
+        - MMX Registers (64bits)
+            - MM0 = low 64 bits of ST0
+            ...
+            - MM7 = low 64 bits of ST7
+        - XMM Registers (128bits)
+            - XMM0 - XMM7
+
+GDB
+    - break main
+    - run
+    - info registerss
+    - info all-registers
+    - CTRL+L - clear screen
+    - set disassembly-flavor intel
+    
+CPU Modes
+    - Real Mode
+    - Protected Mode
+    - System Management Mode
+
+Segment Descriptors
+    - GDT - Global
+    - LDT - Local
+    - IDT - Interrupt
+
+Virtual Memory Model
+    - 1GB - Kernal
+    - 3GB - User Space
+    - locations
+        - Kernel Space - 0xffffffff - 0xc0000000
+        - Stack - Function Args + Local Vars
+        - Shared Libs + Mappings
+        - Heap - Dynamic Memory
+        - BSS - Uninitialized Data
+        - Data - Initialized Data
+        - Text - Program Code - ... - 0x08048000
+        - 0x00000000
+
+
+Map process
+    - cat /proc/PID/maps
+    - pmap PID
+    - gdb (when break) - infor proc mappings
+
+Instruction Sets
+    - General Purpose
+    - x87 FPU
+    - MMX / SSE / SS#2-4
+
+
