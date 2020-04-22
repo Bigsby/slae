@@ -99,4 +99,20 @@ Instruction Sets
     - x87 FPU
     - MMX / SSE / SS#2-4
 
+VDSO - Virtual Dynamic Shared Object
+http://articles.manugarg.com/systemcallinlinux2_6.html
 
+System Interrupts
+/usr/include/x86_64-linux-gnu/asm/unistd_32.h
+
+- Interrupt 0x80 parameter location
+    - eax - call number - where the return value will be
+    - ebx - 1st argument
+    - ecx - 2nd argument
+    - edx - 3rd argument
+    - esi - 4th argument
+    - edi - 5th argument
+
+nasm -f elf32 -o HelloWorld.o HelloWorld.asm
+nasm -f elf64 -o HelloWorld.o HelloWorld.asm
+ld -o HelloWorld HelloWorld.o
