@@ -59,6 +59,9 @@ http://www.securitytube.net/
 
 GDB
 http://www.securitytube.net/tags/sgde
+    - info functions
+    - info variables
+    - shell readelf -h ELFFILE
     - break main
     - run
     - info registerss
@@ -66,6 +69,8 @@ http://www.securitytube.net/tags/sgde
     - CTRL+L - clear screen
     - set disassembly-flavor intel
     - x/s ADDRESS - display string at ADDRESS
+    - x/LxF &VARIABLE - display L bytes from VARIABLE address onwards in F format (b => byte, w => word)
+    
     
 CPU Modes
     - Real Mode
@@ -138,5 +143,7 @@ https://www.nasm.us/doc/
     - $ - current instruction address
     - $$ - start of current section
     - times X INSTRUCTION - repeat INSTRUCTION X times
-
+    - lea TARGET, [LABEL] - Load Effective Address
+    - xchg REGMEM1, REGMEM2 - swap values
+    
 
