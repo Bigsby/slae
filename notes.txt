@@ -174,3 +174,15 @@ https://www.nasm.us/doc/
         - adc DESTINATION, SOURCE (add carry to result)
         - sub, sbb (subtract and borrow carry)
         - inc, dec
+        - mul (OF and CF set if upper half or result is non-zero)
+            - 8bit - implied operand al - result in ax
+            - 16bit - implied operand ax - result in dx.ax
+            - 32bit - implied operand eax - result in edx.eax
+        - div
+            - 16bit - dividend ax - quocient al - remain ah
+            - 32bit - dividend dx.ax - quocient ax - remain dx
+            - 64bit - dividended edx.eax - quocient eax - remain edx
+        - imul, idiv - signed multiplication and division
+
+
+
