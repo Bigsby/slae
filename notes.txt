@@ -183,6 +183,15 @@ https://www.nasm.us/doc/
             - 32bit - dividend dx.ax - quocient ax - remain dx
             - 64bit - dividended edx.eax - quocient eax - remain edx
         - imul, idiv - signed multiplication and division
+    - Logic Operations
+        - and (r-r, r-m, m-r, r-i, m-i)
+        - or
+        - xor
+        - not
+    - Control Instructions
+        - Branching
+            - jmp - unconditional jump
+            - jXX - conditional jump depending on XX
 
 
 
