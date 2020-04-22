@@ -57,6 +57,30 @@ http://www.securitytube.net/
         - XMM Registers (128bits)
             - XMM0 - XMM7
 
+- EFLAGS Register (S - Status, C - Control, X - System, R - Reserved)
+    -  0 - CF S - Carry Flag
+    -  1 - 1 R
+    -  2 - PF S - Parity Flag
+    -  3 - 0 R
+    -  4 - AF S - Auxiliary Flag
+    -  5 - 0 R
+    -  6 - ZF S - Zero Flag
+    -  7 - SF S - Sign Flag
+    -  8 - TF X - Trap Flag
+    -  9 - IF X - Iterrupt Enable Flag
+    - 10 - DF C - Direction Flag
+    - 11 - OF S - Overflow Flag
+    - 13-12 X - IOPL - I/O Privilege Flag
+    - 14 - NT X - Nested Task
+    - 15 - 0 R
+    - 16 - RF X - Resume Flag
+    - 17 - VM X - Virtual-8086 Mode
+    - 18 - AC X - Alignment Check
+    - 19 - VIF X - Virtual Interrupt Flag
+    - 20 - VIP X - Virtual Interrupt Pending
+    - 21 - ID X - ID Flag
+    - 22-31 - 0 R
+    
 GDB
 http://www.securitytube.net/tags/sgde
     - info functions
@@ -145,5 +169,8 @@ https://www.nasm.us/doc/
     - times X INSTRUCTION - repeat INSTRUCTION X times
     - lea TARGET, [LABEL] - Load Effective Address
     - xchg REGMEM1, REGMEM2 - swap values
-    
-
+    - Arithmethic
+        - add DESTINATION, SOURCE
+        - adc DESTINATION, SOURCE (add carry to result)
+        - sub, sbb (subtract and borrow carry)
+        - inc, dec
