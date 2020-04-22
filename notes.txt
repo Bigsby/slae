@@ -58,12 +58,14 @@ http://www.securitytube.net/
             - XMM0 - XMM7
 
 GDB
+http://www.securitytube.net/tags/sgde
     - break main
     - run
     - info registerss
     - info all-registers
     - CTRL+L - clear screen
     - set disassembly-flavor intel
+    - x/s ADDRESS - display string at ADDRESS
     
 CPU Modes
     - Real Mode
@@ -116,3 +118,25 @@ System Interrupts
 nasm -f elf32 -o HelloWorld.o HelloWorld.asm
 nasm -f elf64 -o HelloWorld.o HelloWorld.asm
 ld -o HelloWorld HelloWorld.o
+
+Data Types
+    - Byte - 8 bits
+    - Word - 16 bits
+    - Double Word - 32 bits
+    - Quad Word - 64 bits
+    - Double Quad Word - 128 bits
+
+NASM
+https://www.nasm.us/doc/
+    - db - define byte
+    - dw - define word
+    - dd - define double
+    - dq - define quad
+    - dt - define extended float
+    - resb X - reserve X number of bytes
+    - resw X - reserve X number of words
+    - $ - current instruction address
+    - $$ - start of current section
+    - times X INSTRUCTION - repeat INSTRUCTION X times
+
+
