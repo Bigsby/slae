@@ -13,7 +13,7 @@ Begin:
     mov eax, 0x5
 
 PrintHW:
-    push rax
+    push eax
 
     ; Print mesageusing write syscall
     mov eax, 0x4
@@ -22,8 +22,8 @@ PrintHW:
     mov edx, menlen
     int 0x80
 
-    pop rax
-    dec rax
+    pop eax
+    dec eax
     jnz PrintHW
 
     mov eax, 0x1

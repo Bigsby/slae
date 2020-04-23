@@ -11,6 +11,10 @@ https://github.com/xMilkPowderx/SLAE-Code
 https://github.com/prateek147/SLAE/tree/master/SLAE-Code
 https://www.youtube.com/user/TheSecurityTube/videos
 http://www.securitytube.net/
+http://www.shell-storm.org/
+http://exploit-db.com
+http://www.projectshellcode.com/
+http://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump
 
 - lscpu
 - cat /proc/cpuinfo
@@ -131,6 +135,7 @@ Instruction Sets
     - MMX / SSE / SS#2-4
 
 VDSO - Virtual Dynamic Shared Object
+IDS - Intrusion Detection System
 http://articles.manugarg.com/systemcallinlinux2_6.html
 
 System Interrupts
