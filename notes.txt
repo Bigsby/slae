@@ -203,6 +203,14 @@ https://www.nasm.us/doc/
             - Keeping state
                 - pushad, popad - store and restore registers in the stack
                 - pushfd, popfd - store and restore flags in the stack
+            - Prologue
+                - push ebp
+                - mov ebp, esp
+            - Epilogue
+                - mov esp, ebp
+                - pop ebp
+                - or just: leave
+
 
 
 
