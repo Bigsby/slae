@@ -15,6 +15,7 @@ http://www.shell-storm.org/
 http://exploit-db.com
 http://www.projectshellcode.com/
 http://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump
+http://libemu.carnivore.it/
 
 - lscpu
 - cat /proc/cpuinfo
