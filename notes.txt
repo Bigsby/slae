@@ -191,7 +191,19 @@ https://www.nasm.us/doc/
     - Control Instructions
         - Branching
             - jmp - unconditional jump
+                - near - -128 - +127
+                - far
             - jXX - conditional jump depending on XX
+        - Procedure
+            - call, return
+            - Arguments
+                - via registers
+                - via stack
+                - via data strcutures pointed to by registers or stack
+            - Keeping state
+                - pushad, popad - store and restore registers in the stack
+                - pushfd, popfd - store and restore flags in the stack
+
 
 
 
