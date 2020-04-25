@@ -1,0 +1,23 @@
+# load symbol file
+symbol-file <fle_name>
+
+# lisf currently visible functions in the current scope
+info functions
+
+# list currently visible variables in the current scope
+info variables
+
+# list variables visible in the scope of <function_name>
+info scope <function_name>
+
+# list files being debugged
+info file
+
+# list source (code) files referenced
+info sources
+
+# breakpoints
+break <function_name>
+break <filename>:<line>
+break <filename>:<function_name>
+clear <same_as_creating>
