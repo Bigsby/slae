@@ -18,3 +18,6 @@ nc <domain> <port>
 ncat --ssl <domain> <port>
 GET / HTTP/1.1
 Host: <domain>
+
+# strings
+strings <obj_file_path>

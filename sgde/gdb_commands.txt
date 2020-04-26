@@ -42,11 +42,17 @@ delete
 info b[reakpoints]
 # runtime info
 
+# set breakpoint condition
+condition <breakpoint_number> <condition>
+# example
+condition 1 counter == 2
+
 # show register values
 info registers
 
 # show expression value
 print <expression>
+print <function_name>
 
 # show memory location content
 x /<format> <expression>
@@ -69,3 +75,25 @@ stepi <count>
 next <count>
 # go to the next instruction, jumping over subroutine calls
 nexti <count>
+
+# change
+
+# set value in memory and registers
+set {<type>} <address_expression> = <value>
+set <variable_name> = <value>
+set $<debug_variable_name> = <value>
+set $<register> = value
+# examples
+set {char} 0xfe00a1234 = 'B'
+set {char} argv[1] = 'T'
+set {char} (argv[1]+3) = 'T'
+set $eax = 0x40
+
+# call functions
+call <call_expression>
+# example
+call strcpy($var1, argv[2])
+
+# armel images
+https://people.debian.org/~aurel32/qemu/armel/
+
