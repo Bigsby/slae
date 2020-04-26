@@ -1,8 +1,17 @@
+# run program
+run <args>
+
+# set args for sebsequent runs
+set args <args>
+
 # load symbol file
 symbol-file <fle_name>
 
 # lisf currently visible functions in the current scope
 info functions
+
+# list local variables
+info locals
 
 # list currently visible variables in the current scope
 info variables
@@ -20,4 +29,43 @@ info sources
 break <function_name>
 break <filename>:<line>
 break <filename>:<function_name>
+break *<address>
+disable <breakpoint_number>
+enable <breakpoint_number>
+delete <breakpoint_number>
 clear <same_as_creating>
+
+# delete all
+delete
+
+# list breakpoints
+info b[reakpoints]
+# runtime info
+
+# show register values
+info registers
+
+# show expression value
+print <expression>
+
+# show memory location content
+x /<format> <expression>
+# example
+x /s argv[0]
+x /i $eip
+x /20x <address>
+x /5i main+27
+
+# disassemble function
+disas[semble] <function_name>
+
+# control
+
+# go to the next line of code, including subroutines
+step <count>
+# go to the next instruction, including subroutines
+stepi <count>
+# go to the next line of code, jumping over subroutine calls
+next <count>
+# go to the next instruction, jumping over subroutine calls
+nexti <count>

@@ -1,2 +1,20 @@
 PLT - Procudure Linkage Table
 
+
+Other commands
+# list symbols in object file
+nm <file_name>
+#example output
+virtual_address - type - name
+1234ASDF T symbolname
+
+# list system calls in object file
+strace <file_name>
+
+
+# netcat
+nc <domain> <port>
+# from nmap
+ncat --ssl <domain> <port>
+GET / HTTP/1.1
+Host: <domain>
