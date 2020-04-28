@@ -7,3 +7,5 @@ hello.exe: hello.obj
 hello.obj: hello.asm
 	ml /c /coff $<
 
+clean:
+	rm hello.obj hello.exe
